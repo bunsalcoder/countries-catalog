@@ -5,24 +5,28 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext .js,.vue",
     "lint:fix": "eslint . --ext .js,.vue --fix"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.19",
     "axios": "^1.7.2",
     "core-js": "^3.8.3",
     "lodash": "^4.17.21",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
     "vue": "^2.6.14"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.9",
-    "@babel/eslint-parser": "^7.25.0",
-    "@babel/preset-env": "^7.25.0",
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.7.1",
+    "eslint-plugin-vue": "^8.0.3",
+    "gh-pages": "^6.1.1",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
@@ -37,12 +41,7 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {
-      "indent": [
-        "error",
-        2
-      ]
-    }
+    "rules": {}
   },
   "browserslist": [
     "> 1%",
